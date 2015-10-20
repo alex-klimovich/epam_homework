@@ -2,7 +2,7 @@ import re
 import multiprocessing
 from pprint import pprint
 
-COUNT_LINES_PER_THREAD = 100
+# COUNT_LINES_PER_THREAD = 100
 
 
 def process_grep(regex, lines):
