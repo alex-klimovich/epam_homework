@@ -9,6 +9,7 @@ PORT_NUMBER = 8000
 COMMANDS_BLACK_LIST = ['rm', 'del']
 
 
+# need to check code
 class CustomHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
     def do_GET(self):
 

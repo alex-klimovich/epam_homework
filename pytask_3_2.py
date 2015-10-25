@@ -46,7 +46,7 @@ def find_links_from_url(url):
 
 
 def links_finder(urls):
-    p = multiprocessing.Pool(len(urls) if len(urls) < 9 else None)
+    p = multiprocessing.Pool(len(urls) if len(urls) <= 8 else None)
     res = p.map(find_links_from_url, urls)
     return dict(res)
 
